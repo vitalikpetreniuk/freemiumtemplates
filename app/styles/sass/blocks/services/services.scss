@@ -1,0 +1,136 @@
+.services {
+  &__container{}
+  &__title {
+    margin: 0 0 21px 0;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    @include media-max(640) {
+      margin: 0 0 5px 0;
+      text-align: left;
+      font-size: 25px;
+      line-height: 30px;
+    }
+    strong {
+      font-weight: 700;
+    }
+  }
+  &__category {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        margin: 0 15px 15px 0;
+        a {
+          color: #000000;
+        }
+        &:hover {
+          a {
+            color: #A72C93;
+          }
+        }
+      }
+    }
+    & > button {
+      display: none;
+      margin: 0 0 20px 0;
+      justify-content: center;
+      width: 100%;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      @include media-max(640) {
+        display: flex;
+      }
+    }
+    div {
+      position: relative;
+      @include media-max(640) {
+        position: fixed;
+        padding: 117px 15px 15px 15px;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background:  #251753;
+        display: none;
+        ul {
+          li {
+            width: 50%;
+            a {
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+    &.active {
+      div {
+        display: block;
+        overflow: scroll;
+      }
+    }
+  }
+  &__cards {
+    .products {
+      &__block {
+        margin: 24px 0 0 0;
+      }
+      &__cards {
+        display: flex;
+        flex-direction: column;
+        ul {
+          overflow: visible;
+          margin: 0 -15px;
+          flex-wrap: wrap;
+          @include media-max(1179) {
+            justify-content: center;
+          }
+          @include media-max(884) {
+            justify-content: space-around;
+          }
+          li {
+            margin: 0 15px;
+            max-width: 265px;
+            width: 100%;
+            @include media-max(640) {
+              margin: 0 10px 30px 10px;
+            }
+            @include media-max(580) {
+              max-width: 220px;
+            }
+            @include media-max(480) {
+              max-width: 195px;
+            }
+            @include media-max(430) {
+              max-width: 160px;
+            }
+            @include media-max(360) {
+              max-width: 140px;
+            }
+          }
+        }
+        &-image {
+          img {
+            max-width: 265px;
+            width: 100%;
+            height: auto;
+          }
+        }
+        &-description {
+          p {
+            @include media-max(640) {
+              display: none;
+            }
+          }
+        }
+        & > a {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

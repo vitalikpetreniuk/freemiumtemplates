@@ -1,0 +1,150 @@
+// USER VARIABLES SECTION
+
+$accent: orange; // Accent Color
+$fontsize: 14px; // Body Font Size
+$textcolor: #000000; // Text Color
+$lineheight: 1.5; // Document Line Height
+$userfont: Poppins, sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+// Media
+@import "media";
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px;
+$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+  color: #000000;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+input, textarea {
+  outline: none;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color: green;
+  }
+}
+
+body {
+  font-family: $userfont;
+  font-size: $fontsize;
+  line-height: $lineheight;
+  color: $textcolor;
+  height: 100%;
+  min-width: 320px;
+  position: relative;
+}
+
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+._overflow-hidden {
+  overflow: hidden;
+}
+
+._container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+._ibg {
+  position: relative;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+._background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  background: #000000;
+  z-index: 50;
+  opacity: 0.6;
+  &.active {
+    display: block;
+  }
+}
+
+._lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+._gradient {
+  background: linear-gradient(180deg, #FFFFFF 0%, #D0C5FF 100%);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}

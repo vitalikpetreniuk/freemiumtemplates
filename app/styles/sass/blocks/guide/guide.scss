@@ -1,0 +1,48 @@
+.guide {
+  &__title {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+  }
+  &__steps {
+    li {
+      display: flex;
+      align-items: center;
+      &:not(:last-of-type) {
+        margin: 0 0 12px 0;
+      }
+      img {}
+      div {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 14px;
+        span {
+          letter-spacing: -0.02em;
+          &:first-of-type {
+            color: #D4D4D4;
+          }
+          &:last-of-type {
+            font-size: 16px;
+          }
+        }
+        a {
+          font-size: 16px;
+          color: #271AC0;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__image {
+    margin: 14px 0 0 0;
+    @include media-max(992) {
+      margin: 20px 0 0 0;
+    }
+    img {
+      max-width: 309px;
+      width: 100%;
+    }
+  }
+}

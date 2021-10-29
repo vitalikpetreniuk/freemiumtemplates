@@ -1,0 +1,110 @@
+.questions {
+  &__container {}
+  &__title {
+    margin: 0 0 26px 0;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    strong {
+      font-weight: 700;
+    }
+  }
+  &__subtitle {
+    max-width: 696px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    & > li {
+      float: left;
+      position: relative;
+      cursor: pointer;
+      height: fit-content;
+      width: 100%;
+      max-width: 540px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 0 0 30px 0;
+      &.active {
+        .questions__list-question {
+          padding-bottom: 12px;
+          p {
+            color: #A72C93;
+          }
+          button {
+            background: #A72C93;
+            img {
+              transform: rotate(-90deg);
+            }
+          }
+        }
+        .questions__list-answer {
+          height: 100%;
+          opacity: 1;
+          padding: 12px 0 0 0;
+        }
+      }
+      @include media-max(1149) {
+        max-width: none;
+        margin: 0 0 20px 0;
+      }
+    }
+    &-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h2 {
+        max-width: 373px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        @include media-max(640) {
+          line-height: 17px;
+        }
+        @include media-max(380) {
+          max-width: 179px;
+        }
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #271AC0;
+        border-radius: 8px;
+        min-width: 40px;
+        height: 36px;
+        img {
+          transition: transform .4s;
+        }
+      }
+    }
+    &-answer {
+      display: block;
+      position: relative;
+      height: 0;
+      opacity: 0;
+      &::before {
+        content: '';
+        display: block;
+        background: rgba(0, 0, 0, 0.05);;
+        position: absolute;
+        left: -20px;
+        top: 0;
+        height: 1px;
+        width: calc(100% + 40px);
+      }
+      ol {
+        margin-top: 10px;
+        li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

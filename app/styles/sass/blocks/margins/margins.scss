@@ -1,0 +1,6 @@
+.margin-top-100-or-50 {
+  margin-top: 100px;
+  @include media-max(640) {
+    margin-top: 50px;
+  }
+}

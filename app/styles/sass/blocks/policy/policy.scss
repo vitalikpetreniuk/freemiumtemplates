@@ -1,0 +1,58 @@
+.policy {
+  &__title {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: -0.02em;
+    strong {
+      font-weight: 700;
+    }
+  }
+  &__date {
+    margin: 0 0 27px 0;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 57px;
+    letter-spacing: -0.02em;
+  }
+  &__main-text {
+    margin: 0 0 14px 0;
+    color: rgba(59, 59, 59, 0.5);
+  }
+  &__secondary-text {
+    text-transform: capitalize;
+    max-width: 777px;
+    span {
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 57px;
+      letter-spacing: -0.02em;
+      @include media-max(640) {
+        line-height: 40px;
+      }
+      strong {
+        font-weight: 700;
+      }
+    }
+    p {
+      margin: 7px 0 0 0;
+      color: rgba(59, 59, 59, 0.5);
+    }
+  }
+  &__list {
+    text-transform: capitalize;
+    li {
+      strong {
+        font-size: 20px;
+        line-height: 57px;
+        letter-spacing: -0.02em;
+        @include media-max(640) {
+          line-height: 40px;
+        }
+      }
+      p {
+        color: rgba(59, 59, 59, 0.5);
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.starbox .stars .star_holder .star {
+  width: 22px;
+  height: 22px;
+  background-size: 22px;
+  cursor: pointer;
+}
+
+///* Colours */
+.starbox .stars { background: #D5D5D5; }
+.starbox .rated .stars { background: #D5D5D5; }
+.starbox .rated.hover .stars { background: #FFC107; }
+.starbox .colorbar {
+  height: 22px;
+  background: #FFC107;
+}
+.starbox .hover .colorbar { background: #FFC107; }
+.starbox .rated .colorbar { background: #FFC107; }
+.starbox .rated.hover .colorbar { background: #FFC107; }
+.starbox .ghost { background: #FFC107; }

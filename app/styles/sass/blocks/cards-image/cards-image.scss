@@ -1,0 +1,15 @@
+.cards-image_large {
+  img {
+    max-height: 329px;
+    max-width: 233px;
+    object-fit: cover;
+  }
+}
+
+.cards-image_small {
+  img {
+    max-height: 167px;
+    max-width: 265px;
+    object-fit: cover;
+  }
+}

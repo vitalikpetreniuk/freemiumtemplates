@@ -42,5 +42,13 @@
 		"terser-webpack-plugin": "^5.1.4",
 		"webpack": "^5.51.1",
 		"webpack-stream": "^7.0.0"
+	},
+	"dependencies": {
+		"imagesloaded": "^4.1.4",
+		"jquery": "^3.6.0",
+		"lightbox2": "^2.11.3",
+		"masonry-layout": "^4.2.2",
+		"rateyo": "^3.0.0-alpha.2",
+		"slick-carousel": "^1.8.1"
 	}
 }

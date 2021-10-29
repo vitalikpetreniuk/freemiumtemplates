@@ -1,0 +1,71 @@
+.switcher {
+  display: flex;
+  a {
+    color: #000000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06), 0 0 1px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    padding: 0;
+    max-width: 182px;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    &.single {
+      margin-left: auto;
+    }
+    span {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      img {
+        width: 8px;
+        height: 6px;
+      }
+    }
+    & > img {
+      width: 58px;
+      height: 40px;
+    }
+  }
+  &__prev {
+    margin: 0 16px 0 0;
+    padding: 0 41px 0 0;
+    @include media-max(450) {
+      padding: 0 27px 0 0;
+    }
+    & > img {
+      margin: 0 32px 0 0;
+      @include media-max(450) {
+        margin: 0 19px 0 -23px;
+      }
+    }
+    span {
+      img {
+        transform: rotate(90deg);
+        margin: 0 11px 0 0;
+      }
+    }
+  }
+  &__next {
+    padding: 0 0 0 41px;
+    @include media-max(450) {
+      padding: 0 0 0 27px;
+    }
+    & > img {
+      margin: 0 0 0 32px;
+      @include media-max(450) {
+        margin: 0 -23px 0 19px;
+      }
+    }
+    span {
+      img {
+        transform: rotate(-90deg);
+        margin: 0 0 0 11px;
+      }
+    }
+  }
+}

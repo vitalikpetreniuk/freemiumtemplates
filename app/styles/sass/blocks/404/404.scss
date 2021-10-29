@@ -1,0 +1,105 @@
+.notfound {
+  position: relative;
+  height: 100vh;
+  margin-top: 90px;
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/src/cosmic.jpg');
+    background-size: cover;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(77, 51, 104, 0.7);
+    }
+  }
+  &__content {
+    padding: 0 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 910px;
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      @include media-max(480) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__404 {
+    position: relative;
+    height: 200px;
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      font-size: 220px;
+      font-weight: 900;
+      margin: 0px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      @include media-max(767) {
+        font-size: 182px;
+      }
+      @include media-max(480) {
+        font-size: 140px;
+      }
+    }
+  }
+  &__btn-home,
+  &__btn-contact {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    padding: 13px 25px;
+    font-size: 18px;
+    border-radius: 40px;
+    margin: 7px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    &:hover {
+      opacity: .7;
+    }
+    @include media-max(480) {
+      font-size: 14px;
+    }
+  }
+  &__btn-home {
+    color: rgba(77, 51, 104, 0.7);
+    background: #fff;
+    &:hover {
+      color: rgba(77, 51, 104, 0.7);
+    }
+  }
+  &__btn-contact {
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
+    &:hover {
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+}

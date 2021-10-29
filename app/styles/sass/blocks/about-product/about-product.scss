@@ -1,0 +1,46 @@
+.about-product {
+  padding: 90px 0 0 0;
+  position: relative;
+  &__bread-crumbs {
+    margin: 25px 0 35px 0;
+    @include media-max(640) {
+      margin: 13px 0 8px 0;
+    }
+  }
+  &__products {
+    padding: 0 0 43px 0;
+    @include media-max(640) {
+      padding: 0 0 67px 0;
+    }
+    .products__block {
+      margin: 75px 0 0 0;
+      @include media-max(640) {
+        margin: 19px 0 0 0;
+      }
+    }
+    .products__header {
+      @include media-max(640) {
+        margin: 0 0 10px 0;
+      }
+    }
+    .products__title {
+      @include media-max(640) {
+        margin: 0;
+      }
+    }
+    .products__cards {
+      ul {
+        overflow: hidden;
+        @include media-max(1150) {
+          overflow-x: scroll;
+        }
+      }
+    }
+  }
+  &__banner {
+    display: none;
+    @include media-max(767) {
+      display: block;
+    }
+  }
+}

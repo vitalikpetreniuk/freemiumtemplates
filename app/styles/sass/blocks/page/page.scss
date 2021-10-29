@@ -1,0 +1,17 @@
+.page {
+  &__products {
+    padding: 0 0 77px 0;
+    @include media-max(640) {
+      padding: 0 0 45px 0;
+    }
+  }
+  &__questions {
+    padding: 60px 0 60px 0;
+    @include media-max(1125) {
+      padding: 30px 0 23px 0;
+    }
+  }
+  &-docs__services {
+    margin-bottom: 60px;
+  }
+}

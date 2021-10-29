@@ -1,0 +1,15 @@
+.FAQ {
+  padding: 115px 0 80px 0;
+  @include media-max(640) {
+    padding: 115px 0 40px 0;
+  }
+  &__questions {
+    margin: 35px 0 0 0;
+  }
+  .questions__title {
+    margin: 0 0 13px 0;
+  }
+  .questions__subtitle {
+    margin-bottom: 50px;
+  }
+}

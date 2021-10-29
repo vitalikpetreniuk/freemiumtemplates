@@ -1,0 +1,31 @@
+.bread-crumbs {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      position: relative;
+      &:not(:last-of-type) {
+        margin: 0 22px 0 0;
+      }
+      &::before {
+        content: '/';
+        position: absolute;
+        right: -15px;
+      }
+      &:last-of-type {
+        &::before {
+          display: none;
+        }
+      }
+      a {
+        color: #A72C93;
+      }
+      &.current {
+        a {
+          color: #000000;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}

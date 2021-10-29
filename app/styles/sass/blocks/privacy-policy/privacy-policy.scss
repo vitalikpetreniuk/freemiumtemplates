@@ -1,0 +1,9 @@
+.privacy-policy {
+  padding: 115px 0 62px 0;
+  @include media-max(640) {
+    padding: 115px 0 40px 0;
+  }
+  &__bread-crumbs {
+    margin: 0 0 35px 0;
+  }
+}

@@ -1,0 +1,103 @@
+.banner {
+  position: relative;
+  padding: 63px 0;
+  &::before {
+    content: url("../images/src/circle-banner2.svg");
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include media-max(1600) {
+      display: none;
+    }
+  }
+  &::after {
+    content: url("../images/src/circle-banner.svg");
+    display: block;
+    position: absolute;
+    top: 24%;
+    right: -4%;
+    @include media-max(1080) {
+      top: 35%;
+      right: -26%;
+    }
+    @include media-max(380) {
+      top: 31%;
+      right: -122%;
+    }
+  }
+  @include media-max(820) {
+    padding: 37px 0;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    max-width: 591px;
+    width: 100%;
+    @include media-max(820) {
+      max-width: none;
+    }
+  }
+  &__image {
+    margin: 0 20px 0 0;
+    @include media-max(820) {
+      display: none;
+    }
+  }
+  &__title {
+    position: relative;
+    margin: 0 0 24px 0;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 126%;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    &::before {
+      content: url("../images/src/icons/icon-block-circle.png");
+      opacity: .4;
+      position: absolute;
+      display: block;
+      top: -8px;
+      left: -30px;
+      @include media-max(820) {
+        left: 50%;
+        top: 0;
+        transform: translate(-50%);
+      }
+    }
+    @include media-max(820) {
+      text-align: center;
+      margin: 0 0 20px 0;
+    }
+    @include media-max(420) {
+      font-size: 25px;
+    }
+    strong {
+      font-weight: 700;
+    }
+  }
+  &__text {
+    p {
+      color: rgba(255, 255, 255, 0.5);
+      &:not(:last-of-type) {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+  &__background {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    img {
+      object-position: center;
+      @include media-max(640) {
+        opacity: 0.95;
+      }
+    }
+  }
+}
