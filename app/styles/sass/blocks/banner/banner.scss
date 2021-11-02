@@ -34,7 +34,7 @@
     justify-content: space-between;
   }
   &__content {
-    max-width: 591px;
+    //max-width: 591px;
     width: 100%;
     @include media-max(820) {
       max-width: none;
