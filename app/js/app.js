@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   $('.slider').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
