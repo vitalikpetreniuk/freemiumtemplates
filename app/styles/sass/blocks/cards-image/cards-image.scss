@@ -11,5 +11,8 @@
     max-height: 167px !important;
     max-width: 265px !important;
     object-fit: cover !important;
+    @include media-min(757) {
+      height: 167px !important;
+    }
   }
 }
