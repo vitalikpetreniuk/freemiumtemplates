@@ -118,6 +118,15 @@
         font-size: 14px;
       }
     }
+    ul {
+      list-style: disc;
+    }
+    ol {
+      list-style: decimal;
+    }
+    ul, ol {
+      margin: 10px 0 10px 20px;
+    }
   }
   &__background {
     z-index: -1;
