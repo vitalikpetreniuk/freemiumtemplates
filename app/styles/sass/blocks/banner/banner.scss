@@ -1,6 +1,7 @@
 .banner {
   position: relative;
   padding: 63px 0;
+  color: rgba(255, 255, 255, 0.5);
   &::before {
     content: url("../images/src/circle-banner2.svg");
     display: block;
